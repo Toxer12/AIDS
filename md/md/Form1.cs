@@ -24,11 +24,14 @@ namespace md
         }
         private void btn1_Click(object sender, EventArgs e)
         {
-            int[] tab = { 7, 2, 5, 4, 1 };
+            int[] tab = { 7, 2, 5, 4, 1, 6, 3, 6, 3, 4, 3, 2, 1, 9, 5, 1, -987};
 
             MessageBox.Show(toString(babel(tab)).ToString());
         }
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int[] tab = { 7, 2, 5, 4, 1, 6, 3, 6, 3, 4, 3, 2, 1, 9, 5, 1, -987 };
+        }
         int[] babel(int[] tab)
         {
             bool a = false;
