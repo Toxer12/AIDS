@@ -1,0 +1,11 @@
+C:\Users\local\Desktop\centol_temporary\md\md\bin\Debug\md.exe.config
+C:\Users\local\Desktop\centol_temporary\md\md\bin\Debug\md.exe
+C:\Users\local\Desktop\centol_temporary\md\md\bin\Debug\md.pdb
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.csproj.AssemblyReference.cache
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.csproj.SuggestedBindingRedirects.cache
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.Form1.resources
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.Properties.Resources.resources
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.csproj.GenerateResource.cache
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.csproj.CoreCompileInputs.cache
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.exe
+C:\Users\local\Desktop\centol_temporary\md\md\obj\Debug\md.pdb
