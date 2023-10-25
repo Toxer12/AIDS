@@ -30,6 +30,8 @@
         {
             this.btn1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtB1 = new System.Windows.Forms.TextBox();
+            this.lstB1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btn1
@@ -52,17 +54,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtB1
+            // 
+            this.txtB1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtB1.Location = new System.Drawing.Point(366, 196);
+            this.txtB1.Name = "txtB1";
+            this.txtB1.Size = new System.Drawing.Size(100, 20);
+            this.txtB1.TabIndex = 2;
+            this.txtB1.TextChanged += new System.EventHandler(this.txtB1_TextChanged);
+            // 
+            // lstB1
+            // 
+            this.lstB1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lstB1.FormattingEnabled = true;
+            this.lstB1.Location = new System.Drawing.Point(558, 60);
+            this.lstB1.Name = "lstB1";
+            this.lstB1.Size = new System.Drawing.Size(216, 186);
+            this.lstB1.TabIndex = 3;
+            this.lstB1.SelectedIndexChanged += new System.EventHandler(this.lstB1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 490);
+            this.Controls.Add(this.lstB1);
+            this.Controls.Add(this.txtB1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,6 +94,8 @@
 
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtB1;
+        private System.Windows.Forms.ListBox lstB1;
     }
 }
 

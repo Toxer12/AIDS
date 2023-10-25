@@ -26,11 +26,26 @@ namespace md
         {
             int[] tab = { 7, 2, 5, 4, 1, 6, 3, 6, 3, 4, 3, 2, 1, 9, 5, 1, -987};
 
-            MessageBox.Show(toString(babel(tab)).ToString());
+            MessageBox.Show(toString(babel(tab)));
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            int[] tab = { 7, 2, 5, 4, 1, 6, 3, 6, 3, 4, 3, 2, 1, 9, 5, 1, -987 };
+            int[] tab = swap(convert(txtB1.Text));
+            lstB1.Items.Clear();
+            foreach (var i in tab)
+            {
+                lstB1.Items.Add(i);
+            }
+            MessageBox.Show(toString(swap(convert(txtB1.Text))));
+
+        }
+        private void txtB1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void lstB1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
         int[] babel(int[] tab)
         {
@@ -69,5 +84,41 @@ namespace md
             }
             return wynik;
         }
+
+        int[] convert(string napis)
+        {
+            var liczbyS = napis.Trim().Split(' ');
+            int[] liczby=new int[liczbyS.Length];
+            for (int i = 0; i < liczbyS.Length; i++)
+            {
+                liczby[i] = int.Parse(liczbyS[i]);
+            }
+            return liczby;
+        }
+        int[] swap(int[] tab)
+        {
+            int[] wynik = tab;
+            int t = tab[0];
+            int ti;
+
+            for(int i =0;i<tab.Length;i++)
+            {
+                t = tab[i];
+                ti = i;
+                for (int y = i+1; y < tab.Length; y++)
+                {
+                    if (t > tab[y])
+                    {
+                        t = tab[y];
+                        ti = y;
+                    }
+                }
+                wynik[ti] = tab[i];
+                wynik[i] = t;
+            }
+            return wynik;
+        }
+
+
     }
 }
