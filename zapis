@@ -134,4 +134,11 @@ namespace Md_Graf
             this.wartosc = liczba;
         }
     }
+
+    class binaryTree
+    {
+        public node3 root;
+        public int liczbaNode = 0;
+
+        public binaryTree(int liczba)
 }
